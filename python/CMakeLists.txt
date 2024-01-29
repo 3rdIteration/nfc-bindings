@@ -2,9 +2,9 @@
 include_directories (${CMAKE_CURRENT_SOURCE_DIR})
 
 if (CMAKE_VERSION VERSION_LESS 3.24)
-  find_package (Python 3.6 COMPONENTS Interpreter Development)
+  find_package (Python 3.6 COMPONENTS Interpreter)
 else ()
-  find_package (Python 3.6 COMPONENTS Interpreter Development.Module)
+  find_package (Python 3.6 COMPONENTS Interpreter)
 endif ()
 
 if (Python_FOUND)
